@@ -36,4 +36,10 @@ def query_message_by_user_id(user_id):
     list = cur.fetchall()
     return list
 
+def add_chat_message(user_id,message,role,message_time):
+    sql = "insert into chat_message (user_id, message, role, message_time) values (%s,%s,%s,%s)"
+    cur = conn.cursor()
+    cur.execute(sql, [user_id,message,role,message_time])
+    conn.commit()
+
 
