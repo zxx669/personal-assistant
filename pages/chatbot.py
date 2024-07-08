@@ -52,7 +52,7 @@ if remove:
     loop = False
     st.switch_page("pages/chatbot2.py")
 
-bg.main_bg('image/chatbot.png')
+bg.main_bg('image/chatbot.jpg')
 
 
 

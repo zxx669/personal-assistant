@@ -37,5 +37,5 @@ remove = st.button("清屏")
 if remove:
     st.switch_page("pages/chatbot2.py")
 
-bg.main_bg('image/chatbot.png')
+bg.main_bg('image/chatbot.jpg')
 

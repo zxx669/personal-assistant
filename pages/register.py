@@ -57,4 +57,4 @@ if loginFlag:
     # 如果要跳转到系统的首页，前面不能加pages
     st.switch_page("login.py")
 
-bg.main_bg('image/register.png')
+bg.main_bg('image/register.jpg')
