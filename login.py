@@ -1,6 +1,7 @@
 import streamlit as st
 import data.data as dd
 import time
+import backgroud.backgroud as bg
 import base64
 # 设置页面的标签页的名字和icon
 st.set_page_config(
@@ -53,18 +54,6 @@ if verify:
     st.switch_page("pages/forget.py")
 
 
-def main_bg(main_bg):
-    main_bg_ext = "png"
-    st.markdown(
-        f"""
-         <style>
-         .stApp {{
-             background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
-             background-size: cover
-         }}
-         </style>
-         """,
-        unsafe_allow_html=True
-    )
+
 # 调用
-main_bg('image/login2.jpg')
+bg.main_bg('image/login.png')

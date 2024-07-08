@@ -2,6 +2,9 @@ import streamlit as st
 import data.data as dd
 import datetime
 import time
+import backgroud.backgroud as bg
+# 背景色
+
 st.set_page_config(
     page_title="chatbot",
 )
@@ -34,5 +37,5 @@ remove = st.button("清屏")
 if remove:
     st.switch_page("pages/chatbot2.py")
 
-
+bg.main_bg('image/chatbot.png')
 

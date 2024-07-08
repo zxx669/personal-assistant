@@ -2,6 +2,8 @@ import streamlit as st
 import re
 import data.data as dd
 import time
+import backgroud.backgroud as bg
+# 背景色
 
 # 设置注册的标签页
 st.set_page_config(
@@ -54,3 +56,5 @@ if registerFlag:
 if loginFlag:
     # 如果要跳转到系统的首页，前面不能加pages
     st.switch_page("login.py")
+
+bg.main_bg('image/register.png')
