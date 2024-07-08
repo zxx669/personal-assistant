@@ -42,4 +42,10 @@ def add_chat_message(user_id,message,role,message_time):
     cur.execute(sql, [user_id,message,role,message_time])
     conn.commit()
 
+def update_password_by_username(username,password):
+    sql = "update sys_user set password = %s where username = %s"
+    cur = conn.cursor()
+    cur.execute(sql, [password,username])
+    conn.commit()
+
 

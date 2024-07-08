@@ -1,5 +1,12 @@
+#[client]
+#showSidebarNavigation = false
+#[theme]
+#base = "dark"
+#textColor = "#FFC0CB"
+
 [client]
 showSidebarNavigation = false
 [theme]
-base = "dark"
-textColor = "#FFC0CB"
+primaryColor = "#74fffc"
+textColor = "ffddeb"
+backgroundColor = "white"
